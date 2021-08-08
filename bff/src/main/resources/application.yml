@@ -1,0 +1,7 @@
+server:
+  port: 5550
+  application:
+    name: cedar-bff
+spring:
+  main:
+    allow-bean-definition-overriding: true #该配置针对此项目存在的多个resource都来自一个服务情况下，导致feignClient的名称相同问题

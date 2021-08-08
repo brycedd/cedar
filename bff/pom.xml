@@ -20,4 +20,29 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <!--内部依赖-->
+        <dependency>
+            <groupId>com.dd</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.dd</groupId>
+            <artifactId>service</artifactId>
+        </dependency>
+        <!--alibaba/cloud-->
+        <!--发现服务-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--调用服务时负载均衡-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+
+    </dependencies>
+
+
 </project>
