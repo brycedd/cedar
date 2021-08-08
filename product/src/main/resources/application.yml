@@ -1,0 +1,46 @@
+server:
+  port: 5550
+
+# redis配置
+spring:
+  application:
+    name: dd-product
+  redis:
+    cluster:
+      nodes: 132.232.32.7:8001,132.232.32.7:8002,132.232.32.7:8003,132.232.32.7:8004,132.232.32.7:8005,132.232.32.7:8006
+    timeout: 5000ms
+    lettuce:
+      pool:
+        max-active: 50
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+
+#zk配置
+zk:
+  curator:
+    retryCount: 5 #重试次数
+    elapsedTimeMs: 5000 #
+    connectUrl: 132.232.32.7:2181 #zk地址
+    sessionTimeOutMs: 60000 #会话超时时间
+    connectionTimeOutMs: 5000 #连接超时时间
+
+# 数据库配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cedar?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    druid:
+      initial-size: 5 #连接池初始化大小
+      min-idle: 10 #最小空闲连接数
+      max-active: 20 #最大连接数
+      web-stat-filter:
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
+      stat-view-servlet: #访问监控网页的登录用户名和密码
+        login-username: druid
+        login-password: druid
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:com/**/mapper/*.xml
