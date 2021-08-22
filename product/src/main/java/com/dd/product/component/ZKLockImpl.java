@@ -20,7 +20,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * @date 2021/8/1
  */
 @Slf4j
-//@AllArgsConstructor(onConstructor_ = @Lazy)
 public class ZKLockImpl implements ZKLock, InitializingBean {
 
     private final static String LOCK_ROOT_PATH = "/ZkLock";

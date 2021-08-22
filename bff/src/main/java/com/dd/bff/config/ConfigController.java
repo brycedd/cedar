@@ -1,5 +1,6 @@
 package com.dd.bff.config;
 
+import com.dd.common.exception.ResponseEnum;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,5 +22,11 @@ public class ConfigController {
     @RequestMapping("/get")
     public boolean get() {
         return useLocalCache;
+    }
+
+    public static void main(String[] args) {
+        ConfigController configController = null;
+        ResponseEnum.BAD_LICENCE_TYPE.assertNotNul(configController);
+        System.out.println("dd");
     }
 }
