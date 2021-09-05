@@ -2,8 +2,6 @@ server:
   port: 5551
 
 
-
-# redis配置
 spring:
   application:
     name: cedar-product
@@ -12,6 +10,8 @@ spring:
       nacos:
         discovery:
           server-addr: 127.0.0.1:8848
+          namespace: 32705d97-6dcf-4283-89af-d5563762ea5d # 区分域，需要进一步再bootstrap中添加相关配置才会生效
+  # redis配置
   redis:
     cluster:
       nodes: 132.232.32.7:8001,132.232.32.7:8002,132.232.32.7:8003,132.232.32.7:8004,132.232.32.7:8005,132.232.32.7:8006

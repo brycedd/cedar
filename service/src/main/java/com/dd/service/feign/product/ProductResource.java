@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(value = Const.ServiceName.CEDAR_PRODUCT/*,url = "127.0.0.1:5551"*/)
 public interface ProductResource {
 
-    @RequestMapping(value = "/demo")
+    @RequestMapping(value = "/product/demo")
     String demo();
 }
