@@ -1,4 +1,4 @@
-package com.dd.product.feignClient;
+package com.dd.product.feign;
 
 import com.dd.service.feign.demo.DemoResource;
 import com.dd.service.service.demo.DemoService;
