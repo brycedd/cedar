@@ -2,7 +2,8 @@ package com.dd.product.feignClient;
 
 import com.dd.service.resource.demo.DemoResource;
 import com.dd.service.service.demo.DemoService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2021/8/8
  */
 @RestController
+@AllArgsConstructor(onConstructor_ = @Lazy)
 public class DemoResourceImpl implements DemoResource {
 
-    @Autowired
-    private DemoService demoService;
+    private final DemoService demoService;
 
 
     @Override
