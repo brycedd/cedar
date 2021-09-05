@@ -7,6 +7,11 @@ server:
 spring:
   application:
     name: cedar-product
+    # nacos配置
+    cloud:
+      nacos:
+        discovery:
+          server-addr: 127.0.0.1:8848
   redis:
     cluster:
       nodes: 132.232.32.7:8001,132.232.32.7:8002,132.232.32.7:8003,132.232.32.7:8004,132.232.32.7:8005,132.232.32.7:8006
@@ -32,11 +37,6 @@ spring:
           login-username: druid
           login-password: druid
       type: com.alibaba.druid.pool.DruidDataSource
-      # nacos配置
-      cloud:
-        nacos:
-          discovery:
-            server-addr:127.0.0.1:8848
 
   mybatis:
     mapper-locations:

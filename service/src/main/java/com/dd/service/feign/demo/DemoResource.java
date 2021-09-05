@@ -1,5 +1,4 @@
-package com.dd.service.resource.product;
-
+package com.dd.service.feign.demo;
 
 import com.dd.common.constant.Const;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -10,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @date 2021/8/8
  */
 @FeignClient(value = Const.ServiceName.CEDAR_PRODUCT)
-public interface ProductResource {
+public interface DemoResource {
 
-    @RequestMapping(value = "/demo")
+    @RequestMapping(value = "/demo/demo")
     String demo();
 }

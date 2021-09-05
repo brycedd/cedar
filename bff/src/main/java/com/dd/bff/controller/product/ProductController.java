@@ -1,7 +1,7 @@
 package com.dd.bff.controller.product;
 
 import com.dd.common.api.CommonResult;
-import com.dd.service.resource.product.ProductResource;
+import com.dd.service.feign.product.ProductResource;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,7 +1,7 @@
 package com.dd.product.feignClient;
 
 import com.dd.product.manager.ProductManager;
-import com.dd.service.resource.product.ProductResource;
+import com.dd.service.feign.product.ProductResource;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.RestController;

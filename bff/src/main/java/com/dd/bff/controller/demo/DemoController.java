@@ -1,6 +1,6 @@
 package com.dd.bff.controller.demo;
 
-import com.dd.service.resource.demo.DemoResource;
+import com.dd.service.feign.demo.DemoResource;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.http.MediaType;

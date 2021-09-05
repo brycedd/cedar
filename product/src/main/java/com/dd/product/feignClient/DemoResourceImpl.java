@@ -1,6 +1,6 @@
 package com.dd.product.feignClient;
 
-import com.dd.service.resource.demo.DemoResource;
+import com.dd.service.feign.demo.DemoResource;
 import com.dd.service.service.demo.DemoService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;

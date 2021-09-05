@@ -23,6 +23,13 @@
     </properties>
 
     <dependencies>
+
+        <!--Spring boot 相关依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <!--alibaba cloud-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -80,9 +87,7 @@
         </dependency>
 
 
-
     </dependencies>
-
 
 
     <build>
