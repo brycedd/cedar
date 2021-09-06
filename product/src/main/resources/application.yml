@@ -1,16 +1,15 @@
 server:
   port: 5551
 
-
 spring:
   application:
     name: cedar-product
+  cloud:
     # nacos配置
-    cloud:
-      nacos:
-        discovery:
-          server-addr: 127.0.0.1:8848
-          namespace: 32705d97-6dcf-4283-89af-d5563762ea5d # 区分域，需要进一步再bootstrap中添加相关配置才会生效
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 32705d97-6dcf-4283-89af-d5563762ea5d # 区分域，需要进一步再bootstrap中添加相关配置才会生效
   # redis配置
   redis:
     cluster:
@@ -23,25 +22,25 @@ spring:
         max-idle: 8
         min-idle: 0
     # 数据库配置
-    datasource:
-      url: jdbc:mysql://132.232.32.7:3306/cedar?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
-      username: root
-      password: Dr445566
-      druid:
-        initial-size: 5 #连接池初始化大小
-        min-idle: 10 #最小空闲连接数
-        max-active: 20 #最大连接数
-        web-stat-filter:
-          exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
-        stat-view-servlet: #访问监控网页的登录用户名和密码
-          login-username: druid
-          login-password: druid
-      type: com.alibaba.druid.pool.DruidDataSource
+  datasource:
+    url: jdbc:mysql://132.232.32.7:3306/cedar?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: Dr445566
+    druid:
+      initial-size: 5 #连接池初始化大小
+      min-idle: 10 #最小空闲连接数
+      max-active: 20 #最大连接数
+      web-stat-filter:
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
+      stat-view-servlet: #访问监控网页的登录用户名和密码
+        login-username: druid
+        login-password: druid
+    type: com.alibaba.druid.pool.DruidDataSource
 
-  mybatis:
-    mapper-locations:
-      - classpath:dao/*.xml
-      - classpath*:com/**/mapper/*.xml
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:com/**/mapper/*.xml
 
 #zk配置
 zk:
