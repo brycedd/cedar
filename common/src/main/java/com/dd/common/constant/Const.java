@@ -12,5 +12,6 @@ public interface Const {
     class ServiceName {
         public static final String CEDAR_PRODUCT = "cedar-product";
         public static final String CEDAR_BFF = "cedar-bff";
+        public static final String PRODUCT_DETAIL_CACHE = "product:detail:cache:";
     }
 }

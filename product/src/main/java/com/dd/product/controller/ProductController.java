@@ -22,6 +22,7 @@ public class ProductController {
 
     @RequestMapping(value = "/productInfo/{id}", method = RequestMethod.GET)
     public CommonResult<Object> getProductInfo(@PathVariable Long id) {
+        productManager.getProductInfo(id);
         return CommonResult.success(null);
     }
 

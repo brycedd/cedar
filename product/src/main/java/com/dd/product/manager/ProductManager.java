@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
+
 /**
  * @author Bryce_dd
  * @date 2021/9/5
@@ -17,5 +18,9 @@ public class ProductManager {
 
     public String demo() {
         return productService.demo();
+    }
+
+    public void getProductInfo(Long id) {
+        productService.getProductInfo(id);
     }
 }
