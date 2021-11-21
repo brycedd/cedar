@@ -5,11 +5,11 @@ spring:
   application:
     name: cedar-gateway
   cloud:
-    # nacos配置
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-        namespace: 32705d97-6dcf-4283-89af-d5563762ea5d # 区分域，需要进一步再bootstrap中添加相关配置才会生效
+    # nacos配置 此处使用nacos默认配置
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#        namespace: 32705d97-6dcf-4283-89af-d5563762ea5d # 区分域，需要进一步再bootstrap中添加相关配置才会生效
     # 网关配置
     gateway:
       discovery:
