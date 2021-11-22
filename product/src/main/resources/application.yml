@@ -40,7 +40,9 @@ spring:
 mybatis:
   mapper-locations:
     - classpath:dao/*.xml
-    - classpath*:com/**/mapper/*.xml
+    - classpath*:com/dd/product/mapper/*.xml
+  type-aliases-package:
+    com.dd.common.model
 
 #zk配置
 zk:

@@ -1,5 +1,6 @@
 package com.dd.product.manager;
 
+import com.dd.common.product.domain.PmsProductParam;
 import com.dd.service.service.product.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
@@ -20,7 +21,7 @@ public class ProductManager {
         return productService.demo();
     }
 
-    public void getProductInfo(Long id) {
-        productService.getProductInfo(id);
+    public PmsProductParam getProductInfo(Long id) {
+        return productService.getProductInfo(id);
     }
 }

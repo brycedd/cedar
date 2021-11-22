@@ -1,6 +1,7 @@
 package com.dd.product.controller;
 
 import com.dd.common.api.CommonResult;
+import com.dd.common.product.domain.PmsProductParam;
 import com.dd.product.manager.ProductManager;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
@@ -22,8 +23,8 @@ public class ProductController {
 
     @RequestMapping(value = "/productInfo/{id}", method = RequestMethod.GET)
     public CommonResult<Object> getProductInfo(@PathVariable Long id) {
-        productManager.getProductInfo(id);
-        return CommonResult.success(null);
+        PmsProductParam productInfo = productManager.getProductInfo(id);
+        return CommonResult.success(productInfo);
     }
 
     @RequestMapping(value = "/demo", method = RequestMethod.GET)

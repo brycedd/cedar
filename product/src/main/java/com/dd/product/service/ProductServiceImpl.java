@@ -1,7 +1,8 @@
 package com.dd.product.service;
 
+import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
-import com.dd.service.mapper.ProductMapper;
+import com.dd.product.mapper.PortalProductMapper;
 import com.dd.service.service.product.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
@@ -15,7 +16,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor(onConstructor_ = @Lazy)
 public class ProductServiceImpl implements ProductService {
 
-    private ProductMapper productMapper;
+    private PortalProductMapper productMapper;
 
     @Override
     public String demo() {
@@ -24,6 +25,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public PmsProductParam getProductInfo(Long id) {
+        PmsProduct productById = productMapper.getProductById(id);
         return productMapper.getProductInfo(id);
     }
 }
