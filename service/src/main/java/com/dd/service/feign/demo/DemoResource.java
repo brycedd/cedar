@@ -5,8 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/8
+ * @author Bryce_dd 2021/8/8
  */
 @FeignClient(value = Const.ServiceName.CEDAR_PRODUCT)
 public interface DemoResource {

@@ -10,8 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/1
+ * @author Bryce_dd 2021/8/1
  */
 @Configuration
 public class ZkCuratorConfig {

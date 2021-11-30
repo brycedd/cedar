@@ -1,8 +1,7 @@
 package com.dd.product.component;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/1
+ * @author Bryce_dd 2021/8/1
  */
 public interface ZKLock {
 

@@ -3,8 +3,7 @@ package com.dd.common.exception;
 import java.text.MessageFormat;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/22
+ * @author Bryce_dd 2021/8/22
  */
 public interface BusinessExceptionAssert extends IResponseEnum,Assert{
 

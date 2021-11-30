@@ -1,8 +1,7 @@
 package com.dd.common.exception;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/22
+ * @author Bryce_dd 2021/8/22
  */
 public class BusinessException extends BaseException{
 

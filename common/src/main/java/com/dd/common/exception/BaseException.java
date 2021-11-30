@@ -3,8 +3,7 @@ package com.dd.common.exception;
 import java.io.Serializable;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/22
+ * @author Bryce_dd 2021/8/22
  */
 public class BaseException extends RuntimeException implements Serializable {
 

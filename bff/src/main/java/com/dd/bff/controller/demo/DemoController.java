@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/8
+ * @author Bryce_dd 2021/8/8
  */
 @RestController
 @RequestMapping(value = "/demo",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

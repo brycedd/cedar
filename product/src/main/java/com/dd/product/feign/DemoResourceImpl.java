@@ -7,8 +7,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author Bryce_dd
- * @date 2021/8/8
+ * @author Bryce_dd 2021/8/8
  */
 @RestController
 @AllArgsConstructor(onConstructor_ = @Lazy)
