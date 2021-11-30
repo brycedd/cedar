@@ -22,10 +22,12 @@
     </properties>
 
     <dependencies>
+        <!--redis-starter 集成了 lettuce连接池-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+        <!--swagger接口文档-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>

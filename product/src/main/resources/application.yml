@@ -5,12 +5,12 @@ spring:
   application:
     name: cedar-product
   cloud:
-    # nacos配置 此处使用nacos默认配置
+    # nacos配置 此处使用nacos默认配置(本机源码启动)
 #    nacos:
 #      discovery:
 #        server-addr: 127.0.0.1:8848
 #        namespace: 32705d97-6dcf-4283-89af-d5563762ea5d # 区分域，需要进一步再bootstrap中添加相关配置才会生效
-  # redis配置
+  # redis配置(远程服务器)
   redis:
     cluster:
       nodes: 132.232.32.7:8001,132.232.32.7:8002,132.232.32.7:8003,132.232.32.7:8004,132.232.32.7:8005,132.232.32.7:8006
@@ -21,7 +21,7 @@ spring:
         max-wait: -1ms
         max-idle: 8
         min-idle: 0
-    # 数据库配置
+    # 数据库配置(远程服务器)
   datasource:
     url: jdbc:mysql://132.232.32.7:3306/cedar?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
     username: root
@@ -39,12 +39,9 @@ spring:
 
 mybatis:
   mapper-locations:
-    - classpath:dao/*.xml
-    - classpath*:com/dd/product/mapper/*.xml
-  type-aliases-package:
-    com.dd.common.model
+    - classpath:mapper/*.xml
 
-#zk配置
+#zk配置(远程服务器)
 zk:
   curator:
     retryCount: 5 #重试次数
