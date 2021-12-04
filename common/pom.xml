@@ -53,7 +53,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-
+        <!--集成jetCatch-->
+        <dependency>
+            <groupId>com.alicp.jetcache</groupId>
+            <artifactId>jetcache-starter-redis-lettuce</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

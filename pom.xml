@@ -28,6 +28,7 @@
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
         <druid.version>1.1.10</druid.version>
         <mysql-connector.version>8.0.15</mysql-connector.version>
+        <jetcache.version>2.6.0</jetcache.version>
     </properties>
 
     <modules>
@@ -86,7 +87,7 @@
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger2.version}</version>
             </dependency>
-            <!-- ======================================数据库相关====================================== -->
+            <!--数据库相关-->
             <!--MyBatis-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
@@ -111,7 +112,13 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector.version}</version>
             </dependency>
-            <!-- ======================================数据库相关====================================== -->
+            <!--集成jetCatch-->
+            <dependency>
+                <groupId>com.alicp.jetcache</groupId>
+                <artifactId>jetcache-starter-redis-lettuce</artifactId>
+                <version>${jetcache.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
