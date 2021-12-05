@@ -1,4 +1,4 @@
-package com.dd.cache;
+package com.dd.common.cache;
 
 import com.alicp.jetcache.Cache;
 import com.alicp.jetcache.anno.CacheType;
