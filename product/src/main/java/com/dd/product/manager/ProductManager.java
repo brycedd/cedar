@@ -1,5 +1,6 @@
 package com.dd.product.manager;
 
+import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
 import com.dd.service.service.product.ProductService;
 import lombok.AllArgsConstructor;
@@ -22,5 +23,9 @@ public class ProductManager {
 
     public PmsProductParam getProductInfo(Long id) {
         return productService.getProductInfo(id);
+    }
+
+    public PmsProduct plusGetProductById(Long id) {
+        return productService.plusGetProductById(id);
     }
 }

@@ -1,6 +1,8 @@
 package com.dd.product.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.dd.common.api.CommonResult;
+import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
 import com.dd.product.manager.ProductManager;
 import lombok.AllArgsConstructor;
@@ -30,5 +32,12 @@ public class ProductController {
     public String productDemo() {
         return productManager.demo();
     }
+
+    @RequestMapping(value = "/mybatis-plus/demo/{id}", method = RequestMethod.GET)
+    public String mybatisPlusDemo(@PathVariable Long id) {
+        final PmsProduct pmsProduct = productManager.plusGetProductById(id);
+        return JSONObject.toJSONString(pmsProduct);
+    }
+
 
 }

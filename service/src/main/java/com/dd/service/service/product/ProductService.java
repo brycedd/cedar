@@ -1,5 +1,6 @@
 package com.dd.service.service.product;
 
+import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
 
 /**
@@ -10,4 +11,6 @@ public interface ProductService {
     String demo();
 
     PmsProductParam getProductInfo(Long id);
+
+    PmsProduct plusGetProductById(Long id);
 }
