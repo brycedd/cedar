@@ -33,6 +33,16 @@
             <artifactId>springfox-swagger2</artifactId>
         </dependency>
         <!--数据库相关-->
+        <!--Mysql数据库驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--集成druid连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
         <!--MyBatis-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -43,16 +53,8 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
-        <!--集成druid连接池-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-        <!--Mysql数据库驱动-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+        <!--集成tk-mybatis-->
+
         <!--集成jetCatch-->
         <dependency>
             <groupId>com.alicp.jetcache</groupId>

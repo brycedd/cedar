@@ -23,6 +23,7 @@
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
         <cedar.version>1.0-SNAPSHOT</cedar.version>
+        <lombok.version>1.18.8</lombok.version>
         <swagger2.version>2.7.0</swagger2.version>
         <mybatis.version>2.2.0</mybatis.version>
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
@@ -143,7 +144,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
+            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 
