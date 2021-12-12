@@ -34,9 +34,9 @@ public class ProductController {
     }
 
     @RequestMapping(value = "/mybatis-plus/demo/{id}", method = RequestMethod.GET)
-    public String mybatisPlusDemo(@PathVariable Long id) {
+    public CommonResult<Object> mybatisPlusDemo(@PathVariable Long id) {
         final PmsProduct pmsProduct = productManager.plusGetProductById(id);
-        return JSONObject.toJSONString(pmsProduct);
+        return CommonResult.success(pmsProduct);
     }
 
 
