@@ -39,5 +39,10 @@ public class ProductController {
         return CommonResult.success(pmsProduct);
     }
 
+    @RequestMapping(value = "/productInfoWithCache/{id}", method = RequestMethod.GET)
+    public CommonResult<Object> getProductInfoWithCache(@PathVariable Long id) {
+        return CommonResult.success(productManager.getProductInfoWithCache(id));
+    }
+
 
 }

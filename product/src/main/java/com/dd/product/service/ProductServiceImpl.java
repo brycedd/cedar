@@ -33,9 +33,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public PmsProduct plusGetProductById(Long id) {
-        final ProductCache productCache = SpringContextUtil.getBean(ProductCache.class);
-        final PmsProduct pmsProductCache = productCache.getPmsProductCache(id);
-        System.out.println(pmsProductCache);
+
         return productMapper.selectById(id);
     }
 }

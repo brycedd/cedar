@@ -1,7 +1,9 @@
 package com.dd.product.manager;
 
+import com.dd.common.cache.ProductCache;
 import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
+import com.dd.common.util.SpringContextUtil;
 import com.dd.service.service.product.ProductService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;
@@ -27,5 +29,10 @@ public class ProductManager {
 
     public PmsProduct plusGetProductById(Long id) {
         return productService.plusGetProductById(id);
+    }
+
+    public PmsProduct getProductInfoWithCache(Long id) {
+        final ProductCache productCache = SpringContextUtil.getBean(ProductCache.class);
+        return productCache.getPmsProductCache(id);
     }
 }

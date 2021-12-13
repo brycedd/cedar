@@ -1,4 +1,4 @@
-package com.dd.common.cache;
+package com.dd.common.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

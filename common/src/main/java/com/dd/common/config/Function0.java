@@ -1,4 +1,4 @@
-package com.dd.common.cache;
+package com.dd.common.config;
 
 /**
  * @author Bryce_dd 2021/12/13 22:34
