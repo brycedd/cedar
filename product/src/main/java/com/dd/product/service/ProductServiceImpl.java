@@ -3,6 +3,7 @@ package com.dd.product.service;
 import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
 import com.dd.common.cache.ProductCache;
+import com.dd.common.util.SpringContextUtil;
 import com.dd.product.mapper.PortalProductMapper;
 import com.dd.service.service.product.ProductService;
 import lombok.AllArgsConstructor;
@@ -32,6 +33,9 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public PmsProduct plusGetProductById(Long id) {
+        final ProductCache productCache = SpringContextUtil.getBean(ProductCache.class);
+        final PmsProduct pmsProductCache = productCache.getPmsProductCache(id);
+        System.out.println(pmsProductCache);
         return productMapper.selectById(id);
     }
 }

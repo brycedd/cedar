@@ -13,4 +13,9 @@ public interface Const {
         public static final String CEDAR_BFF = "cedar-bff";
         public static final String PRODUCT_DETAIL_CACHE = "product:detail:cache:";
     }
+
+    class ThreadName {
+    public static final String AUTO_LOAD_EXECUTOR_NAME = "auto_load_executor_name";
+
+    }
 }
