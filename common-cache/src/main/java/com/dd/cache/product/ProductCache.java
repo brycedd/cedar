@@ -1,9 +1,9 @@
-package com.dd.cache.cache;
+package com.dd.cache.product;
 
 import com.alicp.jetcache.Cache;
 import com.alicp.jetcache.anno.CacheType;
 import com.alicp.jetcache.anno.CreateCache;
-import com.dd.cache.cache.dao.CacheProductDAO;
+import com.dd.cache.product.dao.CacheProductDAO;
 import com.dd.cache.util.JetCacheDataAsyncLoadUtil;
 import com.dd.common.model.PmsProduct;
 import lombok.extern.slf4j.Slf4j;
