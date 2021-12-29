@@ -19,6 +19,8 @@ public class ProductManager {
 
     private ProductService productService;
 
+    private ProductCache productCache;
+
     public String demo() {
         return productService.demo();
     }
@@ -32,7 +34,6 @@ public class ProductManager {
     }
 
     public PmsProduct getProductInfoWithCache(Long id) {
-        final ProductCache productCache = SpringContextUtil.getBean(ProductCache.class);
         return productCache.getPmsProductCache(id);
     }
 }
