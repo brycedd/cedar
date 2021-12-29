@@ -1,6 +1,6 @@
 package com.dd.product.manager;
 
-import com.dd.common.cache.ProductCache;
+import com.dd.cache.cache.ProductCache;
 import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
 import com.dd.service.service.product.ProductService;

@@ -1,4 +1,4 @@
-package com.dd.common.util;
+package com.dd.cache.util;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Lazy;

@@ -1,4 +1,4 @@
-package com.dd.common.cache.dao;
+package com.dd.cache.cache.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.dd.common.model.PmsProduct;

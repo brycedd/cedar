@@ -1,8 +1,7 @@
-package com.dd.common.util;
+package com.dd.cache.util;
 
 import com.alicp.jetcache.Cache;
-import com.dd.common.config.AsyncLoader;
-import com.dd.common.config.Function0;
+import com.dd.common.util.SpringContextUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Objects;

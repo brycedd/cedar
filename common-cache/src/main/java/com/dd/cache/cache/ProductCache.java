@@ -1,11 +1,11 @@
-package com.dd.common.cache;
+package com.dd.cache.cache;
 
 import com.alicp.jetcache.Cache;
 import com.alicp.jetcache.anno.CacheType;
 import com.alicp.jetcache.anno.CreateCache;
-import com.dd.common.cache.dao.CacheProductDAO;
+import com.dd.cache.cache.dao.CacheProductDAO;
+import com.dd.cache.util.JetCacheDataAsyncLoadUtil;
 import com.dd.common.model.PmsProduct;
-import com.dd.common.util.JetCacheDataAsyncLoadUtil;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.beans.factory.annotation.Qualifier;

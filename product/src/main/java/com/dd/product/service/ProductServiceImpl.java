@@ -1,9 +1,8 @@
 package com.dd.product.service;
 
+import com.dd.cache.cache.ProductCache;
 import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
-import com.dd.common.cache.ProductCache;
-import com.dd.common.util.SpringContextUtil;
 import com.dd.product.mapper.PortalProductMapper;
 import com.dd.service.service.product.ProductService;
 import lombok.AllArgsConstructor;

@@ -33,12 +33,24 @@ public class ProductController {
         return productManager.demo();
     }
 
+    /**
+     * xml方式查询数据库
+     *
+     * @param id id
+     * @return return
+     */
     @RequestMapping(value = "/mybatis-plus/demo/{id}", method = RequestMethod.GET)
     public CommonResult<Object> mybatisPlusDemo(@PathVariable Long id) {
         final PmsProduct pmsProduct = productManager.plusGetProductById(id);
         return CommonResult.success(pmsProduct);
     }
 
+    /**
+     * jetCache方式查询数据
+     *
+     * @param id id
+     * @return return
+     */
     @RequestMapping(value = "/productInfoWithCache/{id}", method = RequestMethod.GET)
     public CommonResult<Object> getProductInfoWithCache(@PathVariable Long id) {
         return CommonResult.success(productManager.getProductInfoWithCache(id));

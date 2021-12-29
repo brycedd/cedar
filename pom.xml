@@ -38,6 +38,7 @@
         <module>bff</module>
         <module>service</module>
         <module>gateway</module>
+        <module>common-cache</module>
     </modules>
 
     <dependencyManagement>
@@ -74,6 +75,11 @@
             <dependency>
                 <groupId>com.dd</groupId>
                 <artifactId>service</artifactId>
+                <version>${cedar.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.dd</groupId>
+                <artifactId>common-cache</artifactId>
                 <version>${cedar.version}</version>
             </dependency>
 

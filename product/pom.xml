@@ -38,11 +38,11 @@
         <!--内部依赖-->
         <dependency>
             <groupId>com.dd</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>service</artifactId>
         </dependency>
         <dependency>
             <groupId>com.dd</groupId>
-            <artifactId>service</artifactId>
+            <artifactId>common-cache</artifactId>
         </dependency>
         <!-- zookeeper依赖 -->
         <dependency>

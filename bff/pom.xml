@@ -26,15 +26,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <!--内部依赖-->
-        <dependency>
-            <groupId>com.dd</groupId>
-            <artifactId>common</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.dd</groupId>
             <artifactId>service</artifactId>
         </dependency>
+
         <!--alibaba/cloud-->
         <!--发现服务-->
         <dependency>
