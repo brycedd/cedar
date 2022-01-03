@@ -1,4 +1,4 @@
-package com.dd.common.util;
+package com.dd.cache.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
