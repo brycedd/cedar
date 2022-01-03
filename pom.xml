@@ -23,13 +23,17 @@
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.1.2.RELEASE</spring-cloud-alibaba.version>
         <cedar.version>1.0-SNAPSHOT</cedar.version>
-        <lombok.version>1.18.8</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <swagger2.version>2.7.0</swagger2.version>
         <mybatis-plus.version>3.4.3.4</mybatis-plus.version>
         <pagehelper-starter.version>1.2.10</pagehelper-starter.version>
         <druid.version>1.1.10</druid.version>
         <mysql-connector.version>8.0.15</mysql-connector.version>
         <jetcache.version>2.6.0</jetcache.version>
+        <redisson.version>3.6.5</redisson.version>
+        <commons-pool2.version>2.4.3</commons-pool2.version>
+        <curator-recipes.version>2.9.1</curator-recipes.version>
+        <zookeeper.version>3.7.0</zookeeper.version>
     </properties>
 
     <modules>
@@ -140,6 +144,44 @@
                 <artifactId>jetcache-starter-redis-lettuce</artifactId>
                 <version>${jetcache.version}</version>
             </dependency>
+
+            <!--redis锁-->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+            <!--java 对象池 一般用于构建连接池-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons-pool2.version}</version>
+            </dependency>
+
+            <!-- zookeeper依赖 -->
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!--zookeeper curator客户端-->
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${curator-recipes.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
