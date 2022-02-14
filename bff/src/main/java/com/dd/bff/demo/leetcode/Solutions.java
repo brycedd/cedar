@@ -5,10 +5,10 @@ package com.dd.bff.demo.leetcode;
  */
 public class Solutions {
 
-    private static final int[] singleNonDuplicatePara = new int[]{1, 1, 2, 2, 8, 8, 7, 12, 12, 13, 13};
+    private static final int[] singleNonDuplicateParam = new int[]{1, 1, 2, 2, 8, 8, 7, 12, 12, 13, 13};
 
     public static void main(String[] args) {
-        System.out.println(singleNonDuplicate(singleNonDuplicatePara));
+        System.out.println(singleNonDuplicate(singleNonDuplicateParam));
         System.out.println("+++++++++++++++++++++++++++++++++++++++++");
     }
 
