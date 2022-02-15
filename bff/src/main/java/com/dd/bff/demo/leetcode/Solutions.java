@@ -39,7 +39,7 @@ public class Solutions {
             int n = matrix.length, m = matrix[0].length;
             for (int i = 0; i < n; i++) {
                 // 设置最大初始值
-                row[i] = 10001;
+                row[i] = 100001;
                 for (int j = 0; j < m; j++) {
                     row[i] = Math.min(row[i], matrix[i][j]);
                     col[j] = Math.max(col[j], matrix[i][j]);
