@@ -7,8 +7,11 @@ package com.dd.bff.demo.leetcode;
 public class DPSolutions {
 
     private static final int jumpParam = 4;
+    private static final int[] lengthOfLISParam = {10,9,2,5,3,7,101,18};
 
     public static void main(String[] args) {
+        System.out.println("D300+++++++++++++++++++++++++++++++++++++++++");
+        System.out.println(D300.lengthOfLIS(lengthOfLISParam));
         System.out.println("DD01+++++++++++++++++++++++++++++++++++++++++");
         System.out.println(DO10.jump(jumpParam));
 
