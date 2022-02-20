@@ -12,7 +12,7 @@ public class DPSolutions {
     public static void main(String[] args) {
         System.out.println("D300+++++++++++++++++++++++++++++++++++++++++");
         System.out.println(D300.lengthOfLIS(lengthOfLISParam));
-        System.out.println("DD01+++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("DO10+++++++++++++++++++++++++++++++++++++++++");
         System.out.println(DO10.jump(jumpParam));
 
     }
