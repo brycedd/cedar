@@ -181,8 +181,6 @@
                 <artifactId>curator-recipes</artifactId>
                 <version>${curator-recipes.version}</version>
             </dependency>
-
-
         </dependencies>
     </dependencyManagement>
 

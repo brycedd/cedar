@@ -1,6 +1,5 @@
 package com.dd.product.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.dd.common.api.CommonResult;
 import com.dd.common.model.PmsProduct;
 import com.dd.common.product.domain.PmsProductParam;
