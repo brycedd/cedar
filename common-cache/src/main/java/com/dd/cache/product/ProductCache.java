@@ -52,7 +52,7 @@ public class ProductCache implements ApplicationRunner {
 
     // 添加异步加载数据类
     private Map<Long, PmsProduct> initCache() {
-        final val pmsProducts = cacheProductDAO.selectList(null);
+        val pmsProducts = cacheProductDAO.selectList(null);
         if (CollectionUtils.isEmpty(pmsProducts)) {
             return new HashMap<>();
         }
