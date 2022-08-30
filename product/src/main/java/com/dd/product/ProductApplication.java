@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 // springboot启动类；包含：@SpringBootConfiguration @EnableAutoConfiguration @ComponentScan
-@SpringBootApplication(scanBasePackages = {"com.dd.product","com.dd.cache"})
+@SpringBootApplication(scanBasePackages = {"com.dd.product","com.dd.cache", "com.dd.common.config"})
 @EnableDiscoveryClient // 开启服务注册与发现
 @MapperScan(basePackages={"com.dd.product.mapper","com.dd.cache"}) //mybatis 开启mapper接口扫描
 @EnableMethodCache(basePackages = "com.dd.product") // jetCatch

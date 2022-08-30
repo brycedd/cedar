@@ -16,6 +16,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class CartProduct extends PmsProduct {
+    private static final long serialVersionUID = 6543892672490325974L;
     private List<PmsProductAttribute> productAttributeList;
     private List<PmsSkuStock> skuStockList;
 }

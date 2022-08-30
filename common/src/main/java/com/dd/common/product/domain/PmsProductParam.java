@@ -15,6 +15,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class PmsProductParam extends PmsProduct {
+    private static final long serialVersionUID = -3798350948539272822L;
     // 商品阶梯价格设置
     private List<PmsProductLadder> productLadderList;
     // 商品满减价格设置
