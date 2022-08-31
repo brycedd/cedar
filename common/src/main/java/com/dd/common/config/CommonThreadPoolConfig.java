@@ -34,4 +34,9 @@ public class CommonThreadPoolConfig {
         threadPoolExecutor.allowCoreThreadTimeOut(true);
         return threadPoolExecutor;
     }
+
+    @Bean
+    public ThreadPoolExecutor customerThreadPool() {
+        return null;
+    }
 }
