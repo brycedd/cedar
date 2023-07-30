@@ -52,9 +52,6 @@ public class CacheStampedLock {
 
     /**
      * 如果数据不存在则从数据库读取添加到 map 中,锁升级运用
-     *
-     * @param key
-     * @return
      */
     public String getIfNotExist(Integer key) {
         // 获取读锁，也可以直接调用 get 方法使用乐观读
