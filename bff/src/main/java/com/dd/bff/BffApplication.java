@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * 提供统一的前端聚合服务
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.dd.bff", "com.dd.common"})
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"com.dd.service.feign"})
 public class BffApplication {

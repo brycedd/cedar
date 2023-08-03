@@ -1,4 +1,4 @@
-package com.dd.bff.demo;
+package com.dd.bff.work;
 
 import java.util.function.Consumer;
 

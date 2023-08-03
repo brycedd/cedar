@@ -19,4 +19,8 @@ public class CommonThreadPoolUtil {
                 r -> new Thread(r, "common-async-thread-" + r.hashCode()),
                 new ThreadPoolExecutor.CallerRunsPolicy());
     }
+
+    public static ThreadPoolExecutor getCommonThreadPool() {
+        return (ThreadPoolExecutor) SpringContextUtil.getBean("commonThreadPool");
+    }
 }

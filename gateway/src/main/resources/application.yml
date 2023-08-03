@@ -21,6 +21,11 @@ spring:
           uri: lb://cedar-product
           predicates:
             - Path=/product/**
+
+        - id: cedar-bff
+          uri: lb://cedar-product
+          predicates:
+            - Path=/bff/**
 # gateway日志级别
 logging:
   level:

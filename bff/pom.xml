@@ -39,12 +39,22 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
+        <!--FOR DEMO-->
         <!--纤程-->
         <dependency>
             <groupId>co.paralleluniverse</groupId>
             <artifactId>quasar-core</artifactId>
             <version>0.7.9</version>
         </dependency>
+        <!-- disruptor -->
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.3.4</version>
+        </dependency>
+        <!--FOR DEMO-->
+
     </dependencies>
 
 
