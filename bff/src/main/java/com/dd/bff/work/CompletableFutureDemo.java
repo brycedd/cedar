@@ -19,6 +19,7 @@ public class CompletableFutureDemo {
                         CompletableFuture.runAsync(CompletableFutureDemo::doSomething2, commonThreadPool),
                         CompletableFuture.runAsync(CompletableFutureDemo::doSomething3, commonThreadPool))
                 .join();
+
         System.out.println("第一次耗时：" + (System.currentTimeMillis() - t1));
         System.out.println("start two>>>>>>>>>>>");
         long t2 = System.currentTimeMillis();
