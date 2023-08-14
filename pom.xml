@@ -43,6 +43,7 @@
         <module>service</module>
         <module>gateway</module>
         <module>common-cache</module>
+        <module>demo</module>
     </modules>
 
     <dependencyManagement>
@@ -232,5 +233,4 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
-
 </project>
