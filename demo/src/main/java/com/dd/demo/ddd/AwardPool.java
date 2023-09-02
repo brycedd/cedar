@@ -11,6 +11,6 @@ public class AwardPool implements Entity<DString>{
     private List<Award> awards;// 奖池中包含的奖品
 
     public boolean match(PoolStrategy strategy) {
-
+        return true;
     }
 }
